@@ -4,7 +4,7 @@
     
     Топология сети:
 
-    ![alt-текст]( )
+    ![alt-текст](https://github.com/Galo9/HW_Network_engineer/blob/main/HW-1/HW1_topology.PNG)
     
     1.1 Настройка основных параметров маршрутизатора:
 
@@ -113,7 +113,7 @@
     
     Проверяем, что порты назначены VLAN верно:
 
-    ![alt-текст]( )
+    ![alt-текст](https://github.com/Galo9/HW_Network_engineer/blob/main/HW-1/HW1_trunk.PNG)
 
 
 3. Настройка trunk 802.1Q между коммутаторами
@@ -141,7 +141,8 @@
     ```
 
     Проверяем список портов в режиме trunk:
-    ![alt-текст]( )
+
+    ![alt-текст](https://github.com/Galo9/HW_Network_engineer/blob/main/HW-1/HW1_trunk.PNG)
 
     Вопрос: Почему e0/1 не отображается в списке trunk?
     
@@ -168,6 +169,10 @@
     R1(config-subif)#encapsulation dot1q 8
     R1(config-subif)# description Description for subinterface e0/0.8 
     ```
+    Проверка работоспособности подинтерфейсов:
+
+    ![alt-текст](https://github.com/Galo9/HW_Network_engineer/blob/main/HW-1/HW1_interfaces.PNG)
+
 
 5. Проверка работы маршрутизации между VLAN
 
@@ -182,3 +187,4 @@
     ```
     PC-A> ping 192.168.3.3  // Пинг PC-A
     ```
+    
