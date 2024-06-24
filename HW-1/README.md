@@ -113,7 +113,7 @@
     
 Проверяем, что порты назначены VLAN верно:
 
-![alt-текст](https://github.com/Galo9/HW_Network_engineer/blob/main/HW-1/HW1_trunk.PNG)
+![alt-текст](https://github.com/Galo9/HW_Network_engineer/blob/main/HW-1/HW1_vlan.PNG)
 
 
 ### 3. Настройка trunk 802.1Q между коммутаторами
