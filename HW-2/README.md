@@ -25,6 +25,14 @@
     S1(config-line)#login   // Включаем вход в систему
     S1(config-line)#exit
     S1(config)#no service password-encryption
+    S1(config)#banner login $Unauthorized access is prohibited!$   // Создаем баннер о том, что несанкционированный доступ запрещен
+    
+    S1(config)#interface vlan 1   // Настраиваем интерфейс управления и шлюз по умолчанию для каждого коммутатора
+    S1(config-if)#ip address 192.168.1.1 255.255.255.0   // Для коммутатора S2 IP-адрес - 192.168.1.2, для коммуторора S3 - 192.168.1.3
+    S1(config-if)#no shutdown   // Включаем порт
+    S1(config-if)#exit
+```
+
 
 
 
