@@ -24,7 +24,7 @@
     R1(config-line)#login   // Включаем вход в систему
     R1(config-line)#exit
     R1(config)#no service password-encryption
-    R1(config)#banner login $Unauthorized access is prohibited!$   // Создаем банер о том, что несанкционированный доступ запрещен
+    R1(config)#banner login $Unauthorized access is prohibited!$   // Создаем баннер о том, что несанкционированный доступ запрещен
     R1(config)#clock set 22:45:00 16 may 2024   // Настраиваем дату и время
     R1(config)#exit
     R1>copy run sta   // Сохраняем текущую конфигурацию в файле конфигурации запуска
@@ -68,7 +68,7 @@
     S1(config-vlan)#name Native
 
     S1(config)#interface vlan 3   // Настраиваем интерфейс управления и шлюз по умолчанию для каждого коммутатора
-    S1(config-if)#ip address 192.168.3.11 255.255.255.0   // Для коммутатора S2 IP-аадрес - 192.168.3.12
+    S1(config-if)#ip address 192.168.3.11 255.255.255.0   // Для коммутатора S2 IP-адрес - 192.168.3.12
     S1(config-if)#no shutdown   // Включаем порт
     S1(config-if)#exit
     S1(config)#ip defailt-gateway 192.168.3.1   // Назначаем шлюз по умолчанию
